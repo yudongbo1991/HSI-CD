@@ -1,0 +1,27 @@
+{
+  "train_fraction": 0.01,
+  "selection_protocol": "class-wise 0.5% train / 0.5% validation",
+  "epochs": 100,
+  "evaluation_interval": 10,
+  "optimizer": "AdamW",
+  "amsgrad": true,
+  "learning_rate": 0.0006,
+  "weight_decay": 0.00001,
+  "scheduler": "cosine",
+  "scheduler_min_ratio": 0.01,
+  "spatial_input_dim": 128,
+  "spatial_feature_dim": 64,
+  "vrwkv_depth": 3,
+  "vrwkv_decay_range": [0.15, 4.0],
+  "vrwkv_decay_initialization": "signed_symmetric",
+  "spectral_width": 16,
+  "spectral_feature_dim": 64,
+  "spectral_projection_length": 32,
+  "dropout": 0.05,
+  "datasets": {
+    "river": {"patch": 7, "spectral_weight": 0.5, "shared_spatial_encoder": true},
+    "yancheng": {"patch": 7, "spectral_weight": 0.6, "shared_spatial_encoder": false},
+    "bayarea": {"patch": 7, "spectral_weight": 0.4, "shared_spatial_encoder": false},
+    "hermiston390": {"patch": 5, "spectral_weight": 0.5, "shared_spatial_encoder": false}
+  }
+}
