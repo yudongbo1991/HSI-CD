@@ -1,2 +1,2 @@
 # HSI-CD
-Code for Collaborative Discrimination of Pixel-Based and Patch-Based Representations for Hyperspectral Change Detection
+Code for Independent Discrimination, Collaborative Decisions: Pixel–Patch Fusion for Hyperspectral Change Detection
